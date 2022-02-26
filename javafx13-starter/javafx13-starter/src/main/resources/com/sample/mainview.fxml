@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sample.controllers.MainController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="500" minWidth="900" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #282828;">
+         <children>
+            <ComboBox fx:id="micselector" layoutX="146.0" layoutY="30.0" prefHeight="26.0" prefWidth="187.0" promptText="Select microphone" />
+            <ScrollPane fx:id="soundboardpane_parent" layoutX="450.0" layoutY="81.0" prefHeight="400.0" prefWidth="426.0" style="-fx-background-color: #282828;">
+               <content>
+                  <AnchorPane fx:id="soundboardpane" style="-fx-background-color: #282828;" />
+               </content></ScrollPane>
+            <Button layoutX="569.0" layoutY="43.0" mnemonicParsing="false" onAction="#addclip" prefHeight="26.0" prefWidth="187.0" text="Add audio clip" />
+            <ScrollPane fx:id="miccontroller_parent" layoutX="62.0" layoutY="83.0" prefHeight="365.0" prefWidth="356.0" style="-fx-background-color: #282828;">
+              <content>
+                <AnchorPane fx:id="miccontroller" style="-fx-background-color: #282828;" />
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
